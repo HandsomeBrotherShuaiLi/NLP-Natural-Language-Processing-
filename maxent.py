@@ -10,7 +10,7 @@ class ME(object):
         self.labels=set()
 
     def load_data(self,f):
-        file=open(f)
+        file=open(f,encoding='UTF-8')
         for line in file:
             fields=line.strip().split()
             if len(fields)<2:
@@ -24,7 +24,11 @@ class ME(object):
 
     def initparams(self):
         self.size=len(self.trainset)
-        self.M=max([len(record)-1 for record in self.trainset])
+        if len(self.trainset)==0:
+            self.M=0
+        else:
+            self.M = max([len(record) - 1 for record in self.trainset])
+        # self.M=max([len(record)-1 for record in self.trainset])
         self.ep_=[0.0]*len(self.features)
         for i, f in enumerate(self.features):
             self.ep_[i]=float(self.features[f])/self.size
@@ -87,8 +91,8 @@ class ME(object):
 if __name__=="__main__":
     maxent=ME()
     maxent.load_data("input.txt")
-    maxent.train(100)
-    prob=maxent.prediction("Sunny Sad")
+    maxent.train(1000)
+    prob=maxent.prediction("总书记 江泽民")
     print(prob)
 
 

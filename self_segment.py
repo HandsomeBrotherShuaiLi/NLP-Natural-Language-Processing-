@@ -5,7 +5,7 @@ class self_seg(object):
     def __init__(self):
         self.inputdata=str()
         self.outputdata=str()
-        #预先设置n=2,3,4,5,6
+        #预先设置n=3,4,5,6
         self.ngram=defaultdict(int)
         self.sp=[]
         self.s=[]
@@ -14,6 +14,7 @@ class self_seg(object):
         self.roman=["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
         self.shuzi=['0','1','2','3','4','5','6','7','8','9']
         self.biaodian=[x for x in punctuation]
+        self.dictionary = []
 
 
     def load_data(self,f):
@@ -46,6 +47,7 @@ class self_seg(object):
         #n_gram 应该用dict 一遍扫过去的方法，否则用count的内置函数太耗时间
         stlen=len(self.st)
         i=0
+        # hash_map
         tmpngram=defaultdict(int)
         while(i<stlen-5):
             tmpngram[self.st[i:i+2]]+=1
@@ -55,7 +57,7 @@ class self_seg(object):
             tmpngram[self.st[i:i+6]]+=1
             i+=1
         for x in tmpngram:
-            if tmpngram[x]>=2:
+            if tmpngram[x]>2:
                 self.ngram[x]=tmpngram[x]
 
         replenish={}
@@ -117,7 +119,7 @@ class self_seg(object):
             self.s[i]=tmps+'/'
             # print(self.s[i])
 
-        self.dictionary=[]
+
         #tmpdic 记录次数
         tmpdic=defaultdict(int)
         for j in range(len(self.s)):
@@ -150,7 +152,7 @@ class self_seg(object):
         #                 ind += 1
         #             tmps += '/'
         #     self.s[i] = tmps
-        #     print(self.s[i])
+            # print(self.s[i])
     def output(self):
         #第一个字是汉字
         if self.inputdata[1]>= '\u4e00' and self.inputdata[1]<= '\u9fa5':
@@ -183,7 +185,7 @@ if __name__=='__main__':
     m.self_segmentation()
     m.output()
     file=open('./outputdata/out.txt','w',encoding='UTF-8')
-    print(m.inputdata[1])
+
     s=m.outputdata+'\n'
     file.write(s)
     file.close()
