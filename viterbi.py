@@ -64,6 +64,7 @@ class viterbi(object):
         self.process_trainset()
 
         import jieba.posseg as pg
+        outfile=str()
 
         for line in self.test:
             wordlist=[word for (word,flag) in pg.cut(line.strip('\n').strip('\t').strip('\ufeff'))]
@@ -131,26 +132,38 @@ class viterbi(object):
                 tn=t[n-1]
                 n-=1
             # print(t)
+            outfile+='自设计词性标注:'
             ans=str()
+
             for i in range(1,len(wordlist)+1):
                 if wordlist[i-1] not in punctuation:
                     if wordlist[i-1] in self.wordset:
                         ans += wordlist[i - 1] + '/' + t[i] + ' '
+                        outfile+=wordlist[i - 1] + '/' + t[i] + ' '
                     else:
                         # print(wordlist[i-1],'不在')
                         ans+=wordlist[i-1]+'/'+flags[i-1]+' '
+                        outfile+=wordlist[i-1]+'/'+flags[i-1]+' '
 
 
                 else:
                     ans+=wordlist[i-1]+'/w'+' '
+                    outfile+=wordlist[i-1]+'/w'+' '
+            outfile+='\n'
+            outfile+='jieba词性标注：'
 
 
             print('自设计词性标注:',ans)
             ans2=str()
             for i in range(len(wordlist)):
                 ans2+=wordlist[i]+'/'+flags[i]+' '
+                outfile+=wordlist[i]+'/'+flags[i]+' '
             print('jieba词性标注:',ans2)
             print('\n')
+            outfile+='\n'
+        f=open('targetout.txt','w')
+        f.write(outfile)
+        f.close()
     def validation(self):
         import jieba.posseg as pg
         self.process_trainset()
@@ -254,6 +267,7 @@ class viterbi(object):
                     test_states.append('w')
                 if test_states[i-1]==val_states[i-1]:
                     right+=1
+        print('总统计个数：',count,' 正确的个数：',right)
         print('accuracy：',right/count)#1.正确率：0.9546  #2.极大似然估计 0.9551
 
 if __name__=='__main__':
