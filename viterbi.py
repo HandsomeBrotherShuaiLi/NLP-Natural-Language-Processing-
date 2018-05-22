@@ -2,7 +2,7 @@ from collections import defaultdict
 import os
 from zhon.hanzi import punctuation
 
-ROOT = 'S:\pycharm\\NLP\\train'
+ROOT = 'train'
 class viterbi(object):
     def __init__(self,test_path):
         self.states=defaultdict(int)#词性统计
