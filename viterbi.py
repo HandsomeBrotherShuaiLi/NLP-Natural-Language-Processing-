@@ -268,7 +268,8 @@ class viterbi(object):
                 if test_states[i-1]==val_states[i-1]:
                     right+=1
         print('总统计个数：',count,' 正确的个数：',right)
-        print('accuracy：',right/count)#1.正确率：0.9546  #2.极大似然估计 0.9551
+        # 1.正确率：0.9546  #2.极大似然估计 0.9551
+        print('accuracy：',right/count)
 
 if __name__=='__main__':
     m=viterbi(test_path='input.txt')
