@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4f32a90-4eec-43ac-87c0-96c2f33813d8" name="Default" comment="add report">
+    <list default="true" id="e4f32a90-4eec-43ac-87c0-96c2f33813d8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/course.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viterbi.py" afterPath="$PROJECT_DIR$/viterbi.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,10 +14,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="viterbi.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="viterbi.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/viterbi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8505">
+            <state relative-caret-position="0">
               <caret line="270" column="8" lean-forward="false" selection-start-line="270" selection-start-column="8" selection-end-line="270" selection-end-column="8" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -26,12 +26,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input.txt">
+      <file leaf-file-name="course.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/course.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="123">
+              <caret line="105" column="16" lean-forward="true" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#80#1029#0" expanded="false" />
+                <element signature="e#112#137#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,12 +85,13 @@
         <option value="$PROJECT_DIR$/train/TrainningText2.TXT" />
         <option value="$PROJECT_DIR$/input.txt" />
         <option value="$PROJECT_DIR$/viterbi.py" />
+        <option value="$PROJECT_DIR$/course.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="796" />
-    <option name="y" value="111" />
+    <option name="x" value="863" />
+    <option name="y" value="250" />
     <option name="width" value="1034" />
     <option name="height" value="706" />
   </component>
@@ -108,7 +113,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,16 +121,11 @@
               <item name="NLP" type="b2602c69:ProjectViewProjectNode" />
               <item name="NLP" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="NLP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NLP" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -150,24 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.viterbi">
-    <configuration name="MaxEntapplication" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="NLP" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MaxEntapplication.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.course">
     <configuration name="cmaxent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -181,6 +164,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NLP" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/maxent/python/maxent/cmaxent.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="course" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NLP" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/course.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -239,17 +239,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.self_segment" />
       <item index="1" class="java.lang.String" itemvalue="Python.maxent" />
-      <item index="2" class="java.lang.String" itemvalue="Python.MaxEntapplication" />
-      <item index="3" class="java.lang.String" itemvalue="Python.cmaxent" />
-      <item index="4" class="java.lang.String" itemvalue="Python.viterbi" />
+      <item index="2" class="java.lang.String" itemvalue="Python.cmaxent" />
+      <item index="3" class="java.lang.String" itemvalue="Python.viterbi" />
+      <item index="4" class="java.lang.String" itemvalue="Python.course" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.viterbi" />
-        <item index="1" class="java.lang.String" itemvalue="Python.self_segment" />
-        <item index="2" class="java.lang.String" itemvalue="Python.cmaxent" />
-        <item index="3" class="java.lang.String" itemvalue="Python.maxent" />
-        <item index="4" class="java.lang.String" itemvalue="Python.MaxEntapplication" />
+        <item index="0" class="java.lang.String" itemvalue="Python.course" />
+        <item index="1" class="java.lang.String" itemvalue="Python.viterbi" />
+        <item index="2" class="java.lang.String" itemvalue="Python.self_segment" />
+        <item index="3" class="java.lang.String" itemvalue="Python.cmaxent" />
+        <item index="4" class="java.lang.String" itemvalue="Python.maxent" />
       </list>
     </recent_temporary>
   </component>
@@ -323,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526997911753</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="viterbi algorithm">
+      <created>1527057712194</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1527057712194</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -337,18 +344,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25323975" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18574513" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18735084" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42840096" sideWeight="0.51295894" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108591884" sideWeight="0.48704103" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10620525" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293556" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33890215" sideWeight="0.48704103" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17332613" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45584726" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15035799" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -371,43 +377,16 @@
     <MESSAGE value="add Maximum Likelihood Estimate and change file root" />
     <MESSAGE value="add the output file" />
     <MESSAGE value="add report" />
-    <option name="LAST_COMMIT_MESSAGE" value="add report" />
+    <MESSAGE value="viterbi algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="viterbi algorithm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="37" />
+      <option name="time" value="38" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13230">
-          <caret line="378" column="11" lean-forward="false" selection-start-line="378" selection-start-column="11" selection-end-line="378" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_segment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2065">
-          <caret line="61" column="35" lean-forward="true" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maxent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_segment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1925">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/icwb2-data/training/pku_training.utf8">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1715">
@@ -716,14 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/targetout.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -733,10 +704,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/viterbi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8505">
+        <state relative-caret-position="0">
           <caret line="270" column="8" lean-forward="false" selection-start-line="270" selection-start-column="8" selection-end-line="270" selection-end-column="8" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://S:/Python35/Lib/site-packages/numpy/lib/function_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-788">
+          <caret line="4567" column="4" lean-forward="false" selection-start-line="4567" selection-start-column="4" selection-end-line="4567" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://S:/Python35/Lib/site-packages/matplotlib/axes/_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="497" column="0" lean-forward="false" selection-start-line="497" selection-start-column="0" selection-end-line="497" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://S:/Python35/Lib/site-packages/mpl_toolkits/mplot3d/axes3d.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5098">
+          <caret line="1545" column="8" lean-forward="false" selection-start-line="1545" selection-start-column="8" selection-end-line="1545" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="105" column="16" lean-forward="true" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#80#1029#0" expanded="false" />
+            <element signature="e#112#137#0" expanded="false" />
           </folding>
         </state>
       </provider>
