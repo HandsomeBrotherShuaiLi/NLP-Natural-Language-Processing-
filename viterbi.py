@@ -275,6 +275,8 @@ if __name__=='__main__':
     m=viterbi(test_path='input.txt')
     m.validation()
     m.print_result()
+    str1="\u6211\u559c\u6b22\u4f60"
+    print(str1)
 
 
 
